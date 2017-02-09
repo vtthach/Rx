@@ -46,3 +46,4 @@ pom.xml.*
 build.xml
 ant.properties
 profiles_settings.xml
+.idea/

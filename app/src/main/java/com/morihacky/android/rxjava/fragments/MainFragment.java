@@ -7,12 +7,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+
 import com.morihacky.android.rxjava.R;
 import com.morihacky.android.rxjava.pagination.PaginationAutoFragment;
 import com.morihacky.android.rxjava.rxbus.RxBusDemoFragment;
 import com.morihacky.android.rxjava.volley.VolleyDemoFragment;
+
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class MainFragment
       extends BaseFragment {
@@ -101,6 +103,12 @@ public class MainFragment
     @OnClick(R.id.btn_demo_pagination)
     void demoPaging() {
         clickedOn(new PaginationAutoFragment());
+        //clickedOn(new PaginationFragment());
+    }
+
+    @OnClick(R.id.btn_demo_custom_executor)
+    void demoCustomExcutorService() {
+        clickedOn(new CustomExecutorService());
         //clickedOn(new PaginationFragment());
     }
 
