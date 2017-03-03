@@ -110,7 +110,7 @@ public class CustomExecutorService extends BaseFragment implements View.OnClickL
     }
 
     private DisposableObserver<String> add(DisposableObserver<String> disposal) {
-        if(compositeDisposal == null){
+        if (compositeDisposal == null) {
             compositeDisposal = new CompositeDisposable();
         }
         compositeDisposal.add(disposal);

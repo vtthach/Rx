@@ -108,8 +108,8 @@ public class MainFragment
 
     @OnClick(R.id.btn_demo_custom_executor)
     void demoCustomExcutorService() {
-        clickedOn(new CustomExecutorService());
-        //clickedOn(new PaginationFragment());
+//        clickedOn(new CustomExecutorService());
+        clickedOn(new ShareObservable());
     }
 
     @OnClick(R.id.btn_demo_volley)
